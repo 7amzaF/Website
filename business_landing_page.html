@@ -1,4 +1,6 @@
+# Generating another HTML and CSS template for a sample business website
 
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,3 +142,11 @@
     </footer>
 </body>
 </html>
+"""
+
+# Saving the HTML file
+file_path = "/mnt/data/business_landing_page.html"
+with open(file_path, "w") as file:
+    file.write(html_content)
+
+file_path

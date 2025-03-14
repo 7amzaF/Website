@@ -7,115 +7,128 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
             background-image: url('https://source.unsplash.com/1600x900/?construction,fire');
             background-size: cover;
             background-attachment: fixed;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            background-position: center;
         }
+
         .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
             max-width: 1000px;
             margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+
         h1, h2, h3 {
-            color: #e63946;
+            color: #b22222;
         }
+
         a {
-            color: #1d3557;
+            color: #b22222;
             text-decoration: none;
+            font-weight: bold;
         }
+
         a:hover {
             text-decoration: underline;
-            color: #e63946;
         }
+
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
             margin-top: 20px;
         }
+
         .gallery img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
             border-radius: 4px;
             transition: transform 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .gallery img:hover {
             transform: scale(1.05);
         }
-        .linkedin {
-            display: inline-block;
+
+        .contact {
             margin-top: 20px;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 6px;
         }
-        .linkedin img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s ease;
-        }
-        .linkedin img:hover {
-            transform: scale(1.1);
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Mustafa Qaisi, P.E.</h1>
-    <p>Assistant District Materials Engineer at Iowa DOT</p>
+    <div class="container">
+        <h1>Mustafa Qaisi, P.E.</h1>
+        <h3>Assistant District Materials Engineer at Iowa DOT</h3>
 
-    <h2>About Me</h2>
-    <p>Experienced civil engineer specializing in materials engineering, quality control, and firestop inspections. Contributed to major projects across Iowa, ensuring compliance with safety and industry standards.</p>
+        <h2>About Me</h2>
+        <p>Experienced civil engineer specializing in materials engineering, quality control, and firestop inspections. Contributed to major projects across Iowa, ensuring compliance with safety and industry standards.</p>
 
-    <h2>Work Experience</h2>
-    <ul>
-        <li>Assistant District Materials Engineer, Iowa DOT (2023–Present)</li>
-        <li>Project Manager/Engineer, Terracon Consultants Inc. (2017–2023)</li>
-        <li>Quality Control/Field Inspector, Team Services Inc. (2016–2017)</li>
-        <li>Sites & Sales Engineer, Paschal-Werk G. Maier GmbH (2009–2015)</li>
-    </ul>
+        <h2>Work Experience</h2>
+        <ul>
+            <li>Assistant District Materials Engineer, Iowa DOT (2023–Present)</li>
+            <li>Project Manager/Engineer, Terracon Consultants Inc. (2017–2023)</li>
+            <li>Quality Control/Field Inspector, Team Services Inc. (2016–2017)</li>
+            <li>Sites & Sales Engineer, Paschal-Werk G. Maier GmbH (2009–2015)</li>
+        </ul>
 
-    <h2>Certifications</h2>
-    <ul>
-        <li>IFC Firestop Inspector Certificate (Expires Mar 2028)</li>
-        <li>EIT - NCEES (Issued Dec 2015)</li>
-    </ul>
+        <h2>Certifications</h2>
+        <ul>
+            <li>IFC Firestop Inspector Certificate (Expires Mar 2028) — Credential ID: 135694190</li>
+            <li>EIT - NCEES (Issued Dec 2015) — Credential ID: F19293</li>
+        </ul>
 
-    <h2>Notable Firestop Inspection Projects</h2>
-    <ul>
-        <li>University of Iowa Health Care Rehabilitation Hospital (2020)</li>
-        <li>Eastern Iowa Rehabilitation Hospital (2020)</li>
-        <li>Staybridge Suites (2021)</li>
-        <li>Altoona Data Center for Facebook (2022)</li>
-        <li>Waukee High School (2023)</li>
-        <li>UnityPoint Health Care (2023)</li>
-        <li>Liberty High School Addition (2023)</li>
-    </ul>
+        <h2>Notable Firestop Inspection Projects</h2>
+        <ul>
+            <li>University of Iowa Health Care Rehabilitation Hospital (2020)</li>
+            <li>Eastern Iowa Rehabilitation Hospital (2020)</li>
+            <li>Staybridge Suites (2021)</li>
+            <li>Altoona Data Center for Facebook (2022)</li>
+            <li>Waukee High School (2023)</li>
+            <li>UnityPoint Health Care (2023)</li>
+            <li>Liberty High School Addition (2023)</li>
+        </ul>
 
-    <h2>Project Gallery</h2>
-    <div class="gallery">
-        <img src="1d39e1d3-a03a-4566-839e-177017d24c6e.jpg" alt="Inspection Work">
-        <img src="3acee5d5-0a19-4efc-85d8-1590c99c1282.jpg" alt="Inspection Work">
-        <img src="3db4ea39-1b71-4ab6-94b9-5a3fb43df1e8.jpg" alt="Inspection Work">
-        <img src="4a3b1410-c508-43ad-bda4-143c7c4b384f.jpg" alt="Inspection Work">
-        <img src="5f5e5ae9-593b-4080-92a4-1f772c514b88.jpg" alt="Inspection Work">
-        <img src="9acb1a83-d2d4-40f1-ada9-5cf667890bb1.jpg" alt="Inspection Work">
-        <img src="12cc8ef8-5db8-43e3-a008-d8b2f1cd6858.jpg" alt="Inspection Work">
-        <img src="21bb0e5d-8ac9-4782-81d8-cb4b4ee5e60c.jpg" alt="Inspection Work">
-        <img src="67f4f1db-d35a-4dfe-bcbb-571104de3b37.jpg" alt="Inspection Work">
-        <img src="95e10be1-7b1b-4ffa-b9c5-e8495bb80abb.jpg" alt="Inspection Work">
+        <h2>Project Gallery</h2>
+        <div class="gallery">
+            <img src="1d39e1d3-a03a-4566-839e-177017d24c6e.jpg" alt="Inspection Work">
+            <img src="3acee5d5-0a19-4efc-85d8-1590c99c1282.jpg" alt="Inspection Work">
+            <img src="3db4ea39-1b71-4ab6-94b9-5a3fb43df1e8.jpg" alt="Inspection Work">
+            <img src="4a3b1410-c508-43ad-bda4-143c7c4b384f.jpg" alt="Inspection Work">
+            <img src="5f5e5ae9-593b-4080-92a4-1f772c514b88.jpg" alt="Inspection Work">
+            <img src="9acb1a83-d2d4-40f1-ada9-5cf667890bb1.jpg" alt="Inspection Work">
+            <img src="12cc8ef8-5db8-43e3-a008-d8b2f1cd6858.jpg" alt="Inspection Work">
+            <img src="21bb0e5d-8ac9-4782-81d8-cb4b4ee5e60c.jpg" alt="Inspection Work">
+            <img src="67f4f1db-d35a-4dfe-bcbb-571104de3b37.jpg" alt="Inspection Work">
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>Email: mustafa.qaisi@gmail.com</p>
+            <p>Phone: (331) 444-3333</p>
+            <p><a href="https://www.linkedin.com/in/mustafa-qaisi-101014b9/" target="_blank">LinkedIn</a></p>
+        </div>
+
+        <footer>
+            &copy; 2025 Mustafa Qaisi. All rights reserved.
+        </footer>
     </div>
-
-    <h2>Contact</h2>
-    <p>Connect with me on LinkedIn:</p>
-    <a href="https://www.linkedin.com/in/mustafa-qaisi-101014b9/" target="_blank" class="linkedin">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-    </a>
-</div>
 </body>
 </html>
